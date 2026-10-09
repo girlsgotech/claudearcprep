@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}" }
+    },
+    "team-catalog": {
+      "command": "python",
+      "args": ["${CLAUDE_PROJECT_DIR:-.}/mcp/team_catalog_server.py"],
+      "env": { "CATALOG_DB": "${CATALOG_DB:-./data/catalog.db}" }
+    }
+  }
+}

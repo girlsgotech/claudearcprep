@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "${MY_PERSONAL_GITHUB_TOKEN}" }
+    },
+    "scratch-notes": {
+      "command": "python",
+      "args": ["/home/me/experiments/notes_server.py"]
+    }
+  }
+}
